@@ -45,7 +45,7 @@ function App() {
   const { theme } = useTheme();
 
   return (
-    <Router>
+    <Router basename={import.meta.env.BASE_URL}>
       {/* Toast Notification engine with premium theme styling parameters */}
       <Toaster 
         position="top-right"
